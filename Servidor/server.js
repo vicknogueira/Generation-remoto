@@ -8,7 +8,7 @@ app.get('/', (req, res) =>{// essa rota '/' vai pra raiz
     res.send('Hello World!') // como não tenho nenhuma requisição, vou enviar uma mensagem
 })
 //Isso é outra rota:
-app.get('/contato', (re1, res) =>{// '/contato' é outra rota que pra ser acessado localhost:porta/nomedarota
+app.get('/contato', (re1, res) =>{// '/contato"' é outra rota que pra ser acessado localhost:porta/nomedarota
     res.send("Bem vindo a página de contato!")
 })
 

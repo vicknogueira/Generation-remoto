@@ -35,7 +35,7 @@ app.get('/', (req, res) =>{ // criei uma rota para a raiz
 
 // rota pra listar os livros
 app.get('/book', (req, res) =>{// Outra rota
-    res.json(books); // a resposta irá devolver um formato .json, nesse caso a variável books que contém o arquivo
+    res.json(books); // a resposta irrá devolver um formato .json, nesse caso a variável books que contém o arquivo
 })
 
 // rota para cadastrar o livro:
