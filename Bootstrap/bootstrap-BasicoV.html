@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap -Basico V</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1>Bootstrap - Basico V</h1>
+    <br>
+    <h2>Layout</h2>
+    <br>
+    <h3>Sistema de Grade (flexbox)</h3>
+    <p>
+        O sistema de grade do Bootstrap utiliza uma série de contêiners, linhas e colunas para definição layout e
+        alinhamento de
+        o conteúdo. Ele é construindo com o flexbox sendo totalmente responsivo.
+    </p>
+
+    <h4>Utilizando linhas e colunas</h4>
+    <br>
+    <div class="container">
+        <div class="row">
+            <!-- row é linha -->
+            <div class="col border">Coluna 1</div>
+            <div class="col border">Coluna 2</div>
+            <div class="col border">Coluna 3</div>
+            <div class="col border">Coluna 4</div>
+            <div class="col border">Coluna 5</div>
+            <div class="col border">Coluna 6</div>
+            <div class="col border">Coluna 7</div>
+            <div class="col border">Coluna 8</div>
+            <div class="col border">Coluna 9</div>
+            <div class="col border">Coluna 10</div>
+            <div class="col border">Coluna 11</div>
+        </div>
+        <div class="row">
+            <!-- row é linha -->
+            <div class="col border">Coluna 1</div>
+            <div class="col border">Coluna 2</div>
+            <div class="col border">Coluna 3</div>
+        </div>
+        <div class="row">
+            <!-- row é linha -->
+            <div class="col-2 border">Coluna 1</div>
+            <div class="col-4 border">Coluna 2</div>
+            <div class="col-4 border">Coluna 3</div>
+            <div class="col-2 border">Coluna 4</div>
+        </div>
+    </div>
+    <br>
+    <h4>Definindo quantidade de colunas por linha</h4>
+    <div class="container">
+        <div class="row row-cols-4"><!-- Ele entende que a cada 3 colunas ele quebra uma linha-->
+            <div class="col border">Coluna 1</div>
+            <div class="col border">Coluna 2</div>
+            <div class="col border">Coluna 3</div>
+            <div class="col border">Coluna 4</div>
+            <div class="col border">Coluna 5</div>
+            <div class="col border">Coluna 6</div>
+            <div class="col border">Coluna 7</div>
+            <div class="col border">Coluna 8</div>
+            <div class="col border">Coluna 9</div>
+            <div class="col border">Coluna 10</div>
+            <div class="col border">Coluna 11</div>
+            <div class="col border">Coluna 12</div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4"><!-- Ele entende que quando a tela estiver >= a md ele quebrar a cada 4 colunas, quando estiver >= sm e <= md ele ele pula quebra uma linha a cada 2 colunas, quando for <= sm ele vai dividir em 1 só coluna e quebrar uma row-->
+            <div class="col border">Coluna 1</div>
+            <div class="col border">Coluna 2</div>
+            <div class="col border">Coluna 3</div>
+            <div class="col border">Coluna 4</div>
+            <div class="col border">Coluna 5</div>
+            <div class="col border">Coluna 6</div>
+            <div class="col border">Coluna 7</div>
+            <div class="col border">Coluna 8</div>
+            <div class="col border">Coluna 9</div>
+            <div class="col border">Coluna 10</div>
+            <div class="col border">Coluna 11</div>
+            <div class="col border">Coluna 12</div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Jquery, popper.js e Bootstrap.js -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+</body>
+
+</html>
