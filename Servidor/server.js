@@ -5,7 +5,7 @@ const express = require("express"); // importei o express nesta linha
 const app = express(); // inicializando, cria uma aplicação express
 // isso é uma rota:
 app.get('/', (req, res) =>{// essa rota '/' vai pra raiz
-    res.send('Hello World!') // como não tenho nenhuma requisição, vou enviar uma mensagem
+    res.send('Hello World :)!') // como não tenho nenhuma requisição, vou enviar uma mensagem
 })
 //Isso é outra rota:
 app.get('/contato', (re1, res) =>{// '/contato"' é outra rota que pra ser acessado localhost:porta/nomedarota
