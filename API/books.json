@@ -1,0 +1,50 @@
+[
+    {
+        "isbn": "9876543210",
+        "title": "Star Wars",
+        "author": "Vick",
+        "publish_date": "2020/04/30",
+        "publisher": "Senac",
+        "numOFPages": 472
+    },
+    {
+        "isbn": "0123456789",
+        "title": "Maze Runner",
+        "author": "Vick",
+        "publish_date": "1990/02/10",
+        "publisher": "Generation",
+        "numOFPages": 500
+    },
+    {
+        "isbn": "0123456789",
+        "title": "Maze Runner",
+        "author": "Vick",
+        "publish_date": "1990/02/10",
+        "publisher": "Generation",
+        "numOFPages": 500
+    },
+    {
+        "isbn": "546546161",
+        "title": "Título",
+        "author": "autor",
+        "publish_date": "data de publicação",
+        "publisher": "Quem publicou",
+        "numOFPages": 500
+    },
+    {
+        "isbn": "87565268",
+        "title": "Título2",
+        "author": "autor2",
+        "publish_date": "data de publicação2",
+        "publisher": "Quem publicou2",
+        "numOFPages": 400
+    },
+    {
+        "isbn": "877565268",
+        "title": "Título3",
+        "author": "autor3",
+        "publish_date": "data de publicação3",
+        "publisher": "Quem publicou3",
+        "numOFPages": 900
+    }
+]

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Básico I</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1>Bootstrap Básico I</h1><br>
+
+    <h2>Reboot (reinicialização)</h2>
+    <p>A reinicialização baiseia-se apenas na padronização de estilo para alguns elementos do HTML, fazendo o uso de
+        seletores CSS pelo nome da tag e atributos.</p>
+
+    <h3>Página padrão e fontes nativas</h3>
+    <p>Os elementos &lt;html&gt; e &lt;body&gt; são modificados para melhor exibição da página. </p>
+    <br>
+
+    <h3>Títulos</h3>
+    <p>O elemento HTMl &lt;h1&gt; - &lt;h6&gt; (ou elemento HTML título) representa 6 níveis de título:</p>
+    <h1>Título nível 1</h1>
+    <h2>Título nível 2</h2>
+    <h3>Título nível 3</h3>
+    <h4>Título nível 4</h4>
+    <h5>Título nível 5</h5>
+    <h6>Título nível 6</h6>
+    <br>
+
+    <h3>Parágrafos</h3>
+    <p>O elemento HTML &lt;p&gt; (ou elemnto de parágrafo) representa um parágrafo do texto.</p>
+    <br>
+
+    <h3>Listas</h3>
+    <p>O elemento HTMl &lt;ul&gt; (ou elemento de lista desordenada) representa uma lista de items sem ordem rígida,
+        isto é, uma coleção de items que não trazem uma ordenação numérica e as suas posições. </p>
+    <ul>
+        <!-- Listas não ordenadas -->
+        <li>Risole</li>
+        <ul>
+            <!-- Listas dentro de listas-->
+            <li>Risole de Queijo</li>
+            <li>Risole de presunto com queijo</li>
+        </ul>
+        <li>Pastel</li>
+        <ul>
+            <li>Pastel de Queijo</li>
+            <li>Pastel de pizza</li>
+        </ul>
+        <li>Lasanha</li>
+        <ul>
+            <li>Lasanha a bolonhesa</li>
+            <li>Lasanha 4 queijos</li>
+        </ul>
+    </ul>
+    <br>
+
+    <p>O elemento HTML &lt;ol&gt; (ou elemento de lista ordenada) representa uma lista de items ordenados. </p>
+    <ol>
+        <li>Strognoff de cogumelo</li>
+        <li>Batata empanada</li>
+        <li>Pizza</li>
+    </ol>
+
+    <p>
+        O lemento HTML &lt;dl&gt; (ou elemento de lista de definições) engloba uma lista de pares de termos e
+        descrições.
+    </p>
+    <dl>
+        <dt>Frutas</dt><!-- Título -->
+        <dd>Banana, abacaxi e uva</dd><!-- Descritivo -->
+        <dt>Legumes</dt>
+        <dd>Berinjela, chuchu, batata</dd>
+    </dl><br>
+
+    <h3>Textos pré-formatados</h3>
+    <p>O elemento HTML &lt;pre&gt; representa o texto pré-formatado que deve ser apesentado exatamente como está escrito
+        um arquivo HTML</p>
+    <pre>
+        ***********************
+        * texto pré-formatado *
+        *********************** 1
+                                  2 
+                                    3
+    </pre>
+    <br>
+
+    <h3>Tabelas:</h3>
+    <p></p>
+    <table>
+        <caption>Tabela: Relação de frutas e legumes.</caption>
+        <thead>
+            <tr>
+                <th>Frutas</th>
+                <th>Legumes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Banana</td>
+                <td>Batata</td>
+            </tr>
+            <tr>
+                <td>Pêra</td>
+                <td>Cenoura</td>
+            </tr>
+            <tr>
+                <td>Uva</td>
+                <td>Berinjela</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <h3>Formulários:</h3>
+    <form action="">
+        <fieldset>
+            <legend>Legenda do campo</legend>
+            <p>
+                <label for="inputText">E-mail:</label>
+                <input type="email" id="inputText" placeholder="Campo texto"></p>
+            </p>
+            <p>
+                <label for="select">Lista suspensa (dropdown list)</label>
+                <select name="" id="select">
+                    <option value="">Selecione...</option>
+                    <optgroup label="Frutas">
+                        <option value="Banana">Banana</option>
+                        <option value="Uva">Uva</option>
+                        <option value="Morango">Morango</option>
+                    </optgroup>
+                    <optgroup label="Legumes">
+                        <option value="Berinjela">Berinjela</option>
+                        <option value="Cenoura">Cenoura</option>
+                        <option value="Batata">Batata</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="">
+                    <input type="checkbox" value="frutas" checked>Frutas
+                </label>
+                <label for="">
+                    <input type="checkbox" value="legumes" checked>Legumes
+                </label>
+            </p>
+            <p>
+                <label for="">
+                    <input type="radio" name="optionsRadios" value="Pêra" checked>Pêra
+                </label>
+                <label for="">
+                    <input type="radio" name="optionsRadios" value="Uva" checked>Uva
+                </label>
+            </p>
+            <p>
+                <label for="textarea">Área do texto (textarea)
+                    <textarea name="" id="textarea" cols="30" rows="3"></textarea>
+                </label>
+            </p>
+            <p>
+                <label for="date">Capo de data</label>
+                <input type="date" id="date">
+            </p>
+            <p>
+                <button type="submit">Botão de submit</button>
+            </p>
+            <br>
+        </fieldset>
+    </form><br>
+
+    <h3>Referências:</h3>
+    <b>Bootstrap</b>, página <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+    <br>
+
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
